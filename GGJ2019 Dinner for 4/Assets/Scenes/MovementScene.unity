@@ -368,16 +368,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed746149dfa68044bae951d85b037797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRoot: {fileID: 1185520800}
-  lookRoot: {fileID: 534669905}
+  playerTransform: {fileID: 1185520800}
+  lookTransform: {fileID: 534669905}
   invert: 0
-  can_Unlock: 1
   sensivity: 5
-  smooth_Steps: 10
-  smooth_Weight: 0.4
-  roll_Angle: 10
-  roll_Speed: 3
-  default_Look_Limits: {x: -70, y: 80}
+  lookLimits: {x: -70, y: 80}
 --- !u!1 &1185520795
 GameObject:
   m_ObjectHideFlags: 0
