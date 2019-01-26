@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2311457497815487281
+--- !u!1 &363150547290417100
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6062512572121176305}
-  - component: {fileID: 7791757217787992646}
-  - component: {fileID: 8091518563816001387}
+  - component: {fileID: 363150547290417107}
+  - component: {fileID: 363150547290417105}
+  - component: {fileID: 363150547290417106}
   m_Layer: 5
   m_Name: Speaker Name
   m_TagString: Untagged
@@ -18,40 +18,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6062512572121176305
+--- !u!224 &363150547290417107
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2311457497815487281}
+  m_GameObject: {fileID: 363150547290417100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6602665475764664921}
+  m_Father: {fileID: 6821627678616356570}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -360.5, y: 42}
-  m_SizeDelta: {x: 187.8, y: 30.4}
+  m_AnchoredPosition: {x: -297, y: 35.5}
+  m_SizeDelta: {x: 180, y: 32.8}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7791757217787992646
+--- !u!222 &363150547290417105
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2311457497815487281}
+  m_GameObject: {fileID: 363150547290417100}
   m_CullTransparentMesh: 0
---- !u!114 &8091518563816001387
+--- !u!114 &363150547290417106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2311457497815487281}
+  m_GameObject: {fileID: 363150547290417100}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -79,7 +79,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Speaker Name
---- !u!1 &4248806592661856999
+--- !u!1 &363150547959135474
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,9 +87,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2077553865042370781}
-  - component: {fileID: 1420320916725793618}
-  - component: {fileID: 554468091497976873}
+  - component: {fileID: 363150547959135473}
+  - component: {fileID: 363150547959135479}
+  - component: {fileID: 363150547959135472}
   m_Layer: 5
   m_Name: Dialogue Text
   m_TagString: Untagged
@@ -97,40 +97,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2077553865042370781
+--- !u!224 &363150547959135473
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4248806592661856999}
+  m_GameObject: {fileID: 363150547959135474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6602665475764664921}
+  m_Father: {fileID: 6821627678616356570}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.8, y: -19.3}
-  m_SizeDelta: {x: 860.9, y: 68.6}
+  m_AnchoredPosition: {x: 0.0000061989, y: -27.5}
+  m_SizeDelta: {x: 772, y: 72.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1420320916725793618
+--- !u!222 &363150547959135479
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4248806592661856999}
+  m_GameObject: {fileID: 363150547959135474}
   m_CullTransparentMesh: 0
---- !u!114 &554468091497976873
+--- !u!114 &363150547959135472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4248806592661856999}
+  m_GameObject: {fileID: 363150547959135474}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -146,7 +146,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -159,7 +159,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Dialogue Text. AHhhhh yes. Some text. So I can see how stuff lays out.
     More text. Good. Good. This shouldn''t be seen when the game is done. Nope. '
---- !u!1 &5076669498729447625
+--- !u!1 &363150547986138099
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,53 +167,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6602665475764664921}
-  - component: {fileID: 6105214239244010582}
-  - component: {fileID: 2823810475938985191}
-  - component: {fileID: 3440943184937498434}
+  - component: {fileID: 6821627678616356570}
+  - component: {fileID: 363150547986138096}
+  - component: {fileID: 363150547986138097}
+  - component: {fileID: 363150547986138098}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6602665475764664921
+--- !u!224 &6821627678616356570
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5076669498729447625}
+  m_GameObject: {fileID: 363150547986138099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6062512572121176305}
-  - {fileID: 2077553865042370781}
+  - {fileID: 363150547290417107}
+  - {fileID: 363150547959135473}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -202.7}
-  m_SizeDelta: {x: 0, y: -405.4}
+  m_AnchoredPosition: {x: 0, y: -161.8}
+  m_SizeDelta: {x: 0, y: -323.6}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6105214239244010582
+--- !u!222 &363150547986138096
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5076669498729447625}
+  m_GameObject: {fileID: 363150547986138099}
   m_CullTransparentMesh: 0
---- !u!114 &2823810475938985191
+--- !u!114 &363150547986138097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5076669498729447625}
+  m_GameObject: {fileID: 363150547986138099}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -236,13 +236,13 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &3440943184937498434
+--- !u!114 &363150547986138098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5076669498729447625}
+  m_GameObject: {fileID: 363150547986138099}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1572920fa9f4a8d42882d2f2fa486d46, type: 3}
@@ -252,5 +252,6 @@ MonoBehaviour:
   content:
   - Hi there!
   - I'm test data!
-  speakerNameObj: {fileID: 2311457497815487281}
-  textObject: {fileID: 4248806592661856999}
+  textSpeed: 0.001
+  speakerNameObj: {fileID: 363150547290417100}
+  textObject: {fileID: 363150547959135474}
