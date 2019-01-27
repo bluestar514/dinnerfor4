@@ -5,7 +5,7 @@ using UnityEngine;
 public class Interact : MonoBehaviour
 {
     bool holding;
-    public float maxDistance = 10.0f;
+    public float maxDistance = 2.5f;
     public Texture2D crosshairImage;
     public Texture2D activecrosshairImage;
     Texture2D inuse;
@@ -80,9 +80,11 @@ public class Interact : MonoBehaviour
 
     void drop()
     {
-        this.transform.GetChild(0).GetComponent<Rigidbody>().useGravity = true;
-        this.transform.DetachChildren();
-        holding = false;
-        print(holding);
+        if (this.transform.childCount > 0)
+        {
+            this.transform.GetChild(0).GetComponent<Rigidbody>().useGravity = true;
+            this.transform.DetachChildren();
+            holding = false;
+        }
     }
 }
