@@ -9,7 +9,7 @@ public class CookingScript : MonoBehaviour
     GameObject foodObject;
     string foodName;
     int dishes = 1;
-    Text hoverText;
+    public Text hoverText;
 
     public GameObject text;
     public List<string> food;
@@ -29,10 +29,14 @@ public class CookingScript : MonoBehaviour
         //foodName = foodObject.name;
         hoverText = text.GetComponent<Text>();
         food = new List<string>();
-        Surfthai = new List<string> {"SahMan", "Onyan", "Tototo", "KoySauce"};
-        Zuup = new List<string> {"Wet", "Pastata", "Tototo", "SahMan"};
-        SaldPototo = new List<string> {"Pototo", "Moyaa", "Onyan", "Eg"};
-        YumYum = new List<string> {"Eg", "Flufferoni", "Sweetness", "CowSauce"};
+        //Surfthai = new List<string> {"SahMan", "Onyan", "Tototo", "KoySauce"};
+        //Zuup = new List<string> {"Wet", "Pastata", "Tototo", "SahMan"};
+        //SaldPototo = new List<string> {"Pototo", "Moyaa", "Onyan", "Eg"};
+        //YumYum = new List<string> {"Eg", "Flufferoni", "Sweetness", "CowSauce"};
+        Surfthai = new List<string> {"Salmon", "Onion", "Tomato", "Soy Sauce"};
+        Zuup = new List<string> {"Wet", "Pasta", "Tomato", "Salmon" };
+        SaldPototo = new List<string> {"Potato", "Mayo", "Onyan", "egg"};
+        YumYum = new List<string> {"egg", "Flour", "Sugar", "Milk"};
         hoverText.text = "Drop ingredient to cook.";
         Surfthai.Sort();
         Zuup.Sort();
@@ -45,10 +49,13 @@ public class CookingScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "ingredient")//whatever the tag for the food is
         {
-            Debug.Log(collision.gameObject.tag == "ingredient");
-            foodObject = GameObject.FindWithTag("ingredient");
+            Debug.Log("ingredient:" + collision.gameObject.tag == "ingredient");
+            //foodObject = GameObject.FindWithTag("ingredient");
+            Debug.Log("food object:" + foodObject);
             foodName = foodObject.name;
+            Debug.Log("food name" + foodName);
             food.Add(foodName);
+            Debug.Log("food list:" + food.Count);
             Destroy(foodObject);
         }
     }
