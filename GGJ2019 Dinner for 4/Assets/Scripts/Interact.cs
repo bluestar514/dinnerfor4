@@ -5,6 +5,7 @@ using UnityEngine;
 public class Interact : MonoBehaviour
 {
     bool holding;
+    GameObject isHeld;
     public float maxDistance = 2.5f;
     public Texture2D crosshairImage;
     public Texture2D activecrosshairImage;
@@ -45,21 +46,27 @@ public class Interact : MonoBehaviour
         //Debug.DrawRay(transform.position, fwd * 2.5f, Color.magenta, 0.1f, true);
         if (Physics.Raycast(transform.position, fwd, out hit, maxDistance))
         {
+            if(holding && isHeld != hit.collider.gameObject)
+            {
+                drop();
+            }
             if (hit.collider.gameObject.CompareTag("ingredient"))
             {
                 inuse = activecrosshairImage;
-                print(hit.distance);
+                //print(hit.distance);
                 if (holding)
                 {
                     hit.collider.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
                     hit.collider.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
                 }
+
                 if (!holding && Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     hit.collider.gameObject.transform.parent = this.transform;
                     hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
 
                     holding = true;
+                    isHeld = hit.collider.gameObject;
                 }
                 else if (holding && Input.GetKeyDown(KeyCode.Mouse0))
                 {
@@ -68,7 +75,7 @@ public class Interact : MonoBehaviour
             }
             else if (hit.collider.gameObject.CompareTag("bear") && Input.GetKeyDown(KeyCode.Mouse0))
             {
-                print("talkable");
+                //print("talkable");
                 hit.collider.gameObject.GetComponent<Speaker>().OpenDialogueBox();
             }
 
@@ -78,11 +85,8 @@ public class Interact : MonoBehaviour
         {
             inuse = crosshairImage;
             drop();
-            //print("not touching");
-            
-            
         }
-        
+
     }
 
     void drop()
