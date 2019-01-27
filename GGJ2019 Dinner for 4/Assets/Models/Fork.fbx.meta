@@ -1,20 +1,15 @@
 fileFormatVersion: 2
-guid: 08f9ba657047b694da55f287e97ec561
+guid: 83e94fbc4f57e9e4c8478c23eaf140ed
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material
+    2100000: Silver
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Macaroni
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 1ede58ff5f6fc5745af22a40a09a1756, type: 2}
+    4300000: 0.Fork
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
