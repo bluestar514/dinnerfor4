@@ -30,11 +30,6 @@ public class Interact : MonoBehaviour
     }
     */
 
-    private void FixedUpdate()
-    {
-        
-    }
-
     void OnGUI()
     {
         float xMin = (Screen.width / 2) - (inuse.width / 2);
@@ -47,31 +42,40 @@ public class Interact : MonoBehaviour
     {
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
         RaycastHit hit;
-        Debug.DrawRay(transform.position, fwd * 10, Color.magenta, 0.1f, true);
+        //Debug.DrawRay(transform.position, fwd * 2.5f, Color.magenta, 0.1f, true);
         if (Physics.Raycast(transform.position, fwd, out hit, maxDistance)
             && hit.collider.gameObject.CompareTag("ingredient"))
         {
             inuse = activecrosshairImage;
             print(hit.distance);
-            if (!holding && Input.GetKey(KeyCode.Mouse0))
+            if (holding)
+            {
+                hit.collider.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                hit.collider.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            }
+            if (!holding && Input.GetKeyDown(KeyCode.Mouse0))
             {
                 hit.collider.gameObject.transform.parent = this.transform;
                 hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                
                 holding = true;
+            }
+            else if (holding && Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                drop();
             }
 
 
         }
         else
         {
-            print("not touching");
             inuse = crosshairImage;
             drop();
+            print("not touching");
+            
+            
         }
-        if (holding && Input.GetKey(KeyCode.Mouse1))
-        {
-            drop();
-        }
+        
     }
 
     void drop()
