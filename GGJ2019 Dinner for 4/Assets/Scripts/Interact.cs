@@ -71,7 +71,7 @@ public class Interact : MonoBehaviour
         {
             inuse = crosshairImage;
             drop();
-            print("not touching");
+            //print("not touching");
             
             
         }
