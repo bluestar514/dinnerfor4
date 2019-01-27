@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
         movement = new Vector3(Input.GetAxis("Horizontal"), 0f, (Input.GetAxis("Vertical")));
         movement *= speed;//sets speed of movement
+
         movement = Vector3.ClampMagnitude(movement, speed);
         movement = transform.TransformDirection(movement);
 
