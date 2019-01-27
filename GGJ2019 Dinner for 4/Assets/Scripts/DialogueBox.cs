@@ -24,6 +24,11 @@ public class DialogueBox : MonoBehaviour
         nameText = speakerNameObj.GetComponent<Text>();
         dialogueText = textObject.GetComponent<Text>();
 
+        
+    }
+
+    private void Start()
+    {
         OpenWindow();
     }
 
