@@ -568,9 +568,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b82b46b6bd8f94da7043b45e0675d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  content:
-  - Oh hey there.
-  - This is some test data which says some stuff.
+  conversations:
+  - content:
+    - 'Oh hey there. '
+    - I say this exactly once.
+    repeated: 0
+    absoluteNumber: 1
+  - content:
+    - I say this sometimes
+    repeated: 0
+    absoluteNumber: -1
+  - content:
+    - And this the rest of the time!
+    repeated: 0
+    absoluteNumber: -1
   speakerName: Testy
   dialogueBoxPrefab: {fileID: 363150547986138099, guid: e61e84ea8a3ceb94fb1e3375d396f4c6,
     type: 3}
